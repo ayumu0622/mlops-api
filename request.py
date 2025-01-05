@@ -1,6 +1,8 @@
 from requests import post
 
-url = "http://127.0.0.1:8000/predict_value/"
+# url = "http://127.0.0.1:8000/predict_value/"
+url = "https://ayumudnslabel.westus.azurecontainer.io:80/predict_value/"
+
 json_data = {"inputs": [[0.5, 0.5, 0.5], [0.6, 0.6, 0.6]]}
 response = post(url=url, json=json_data)
 
