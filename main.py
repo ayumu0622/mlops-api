@@ -24,3 +24,6 @@ def predict_diabete_score(unseen_data: RegressionInputs):
      y_pred = y_pred.flatten().tolist()
      return {"predicted" : y_pred}
 
+@app.get("/hello/")
+def say_hello():
+    return {"message": "Hello"}
